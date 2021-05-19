@@ -1,0 +1,28 @@
+body{
+    background-color:darkslategray
+    
+}
+p{
+    color:aqua
+}
+h1{
+    color:orange
+}
+
+p,h3,li,ul{
+    color: white;
+}
+a{
+    color:red
+}
+
+.image1 {
+    height: 220px;
+    width: 230px;
+}
+ol{
+    list-style: lower-roman;
+}
+span{
+    color:violet
+}
