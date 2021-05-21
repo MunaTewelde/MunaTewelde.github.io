@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Retrieve Grade</title>
+    <link rel="stylesheet" href="/W1D4/css/grade.css">
+</head>
+
+<body>
+    <h1>Retrieve your grade</h1>
+
+    <h3> Get Grade! </h3>
+
+
+    <form action="http://mumstudents.org/params.php" method="post">
+
+        Name: <input type="text" name="studentName">
+        <br />
+
+
+        Student ID:<input type="text" name="studentId">
+        <br />
+        <br />
+
+
+        <fieldset>
+            <legend> Student Entry:</legend>
+            <label> <input type="radio" name="entry" value="february " /> February </label>
+            <label> <input type="radio" name="entry" value="may " /> May </label>
+            <label> <input type="radio" name="entry" value="august" /> August </label>
+            <label> <input type="radio" name="entry" value="november" /> November </label>
+
+        </fieldset>
+
+
+
+        <br />
+
+        <select name="assignment">
+            <option>assigment 1</option>
+            <option>assigment 2</option>
+            <option>assigment 3</option>
+            <option>assigment 4</option>
+            <option>assigment 5</option>
+        </select>
+        <br />
+        <br />
+
+        <label> <input type="checkbox" name="conformation" /> I comform that I am Viewing my own grades</label>
+
+        <input type="submit" />
+    </form>
+</body>
+
+</html>
