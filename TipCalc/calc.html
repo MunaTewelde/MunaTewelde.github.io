@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="/TipCalc/css/calc.css" />
+
+    <script>
+        function Calculate() {
+            let x = parseInt(document.getElementById("input1").value);
+            let y = parseInt(document.getElementById("input2").value);
+            let total = x + x * (y / 100);
+            document.getElementById("total").innerHTML = "$ " + total;
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1> <img src="calculator.png" alt="calculator" /> Tip Calculator</h1>
+    </div>
+
+    <div>
+        <input type="text" id="input1" /> $ SubTotal
+    </div>
+
+    <div>
+        <input type="text" id="input2" /> % Tip
+    </div>
+    <div>
+        <input type="button" onclick="Calculate()" name="calculator" value="Calculate Tip" />
+    </div>
+
+    <div>
+        <hr>
+    </div>
+
+    <div>
+        <h3> Your Total:</h3>
+    </div>
+
+    <div id="total">
+        $0.00
+    </div>
+
+</body>
+
+</html>
