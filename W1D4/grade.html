@@ -1,54 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Retrieve Grade</title>
+    <title>Retrive Grade</title>
     <link rel="stylesheet" href="/W1D4/css/grade.css">
+
 </head>
 
 <body>
-    <h1>Retrieve your grade</h1>
+    <h1> Retrive your Grade</h1>
+    <form action=" http://mumstudents.org/params.php" method="POST">
+        <div class="content">
+            <div>
+                Name <input type="text" name="studentname">
 
-    <h3> Get Grade! </h3>
+            </div>
+            <div>Student Id <input type="text" name="studentid"></div>
 
+            <fieldset>
+                <legend>Student Entry</legend>
+                <input type="radio" name="entry">Feburary
+                <input type="radio" name="entry">May
+                <input type="radio" name="entry">August
+                <input type="radio" name="entry">Novenmber
 
-    <form action="http://mumstudents.org/params.php" method="post">
-
-        Name: <input type="text" name="studentName">
-        <br />
-
-
-        Student ID:<input type="text" name="studentId">
-        <br />
-        <br />
-
-
-        <fieldset>
-            <legend> Student Entry:</legend>
-            <label> <input type="radio" name="entry" value="february " /> February </label>
-            <label> <input type="radio" name="entry" value="may " /> May </label>
-            <label> <input type="radio" name="entry" value="august" /> August </label>
-            <label> <input type="radio" name="entry" value="november" /> November </label>
-
-        </fieldset>
+            </fieldset>
 
 
 
-        <br />
+            <h3>MIU Courses</h3>
 
-        <select name="assignment">
-            <option>assigment 1</option>
-            <option>assigment 2</option>
-            <option>assigment 3</option>
-            <option>assigment 4</option>
-            <option>assigment 5</option>
-        </select>
-        <br />
-        <br />
 
-        <label> <input type="checkbox" name="conformation" /> I comform that I am Viewing my own grades</label>
+            <ul>
+                <li>CS472
+                    <select>
+                        <option>Assigment1</option>
+                        <option>Assigment2</option>
+                        <option>Assigment3</option>
+                        <option>Assigment4</option>
+                    </select>
+                </li>
+                <li>CS422
+                    <select>
+                        <option>Assigment1</option>
+                        <option>Assigment2</option>
+                        <option>Assigment3</option>
+                        <option>Assigment4</option>
+                    </select>
+                </li>
+                <li>CS402
+                    <select>
+                        <option>Assigment1</option>
+                        <option>Assigment2</option>
+                        <option>Assigment3</option>
+                        <option>Assigment4</option>
+                    </select>
+                </li>
+            </ul>
 
-        <input type="submit" />
+            <input type="checkbox" name="consent"> I conform that I am the
+            person with the student Id provided, and I am looking up my grades only
+
+            <div>
+                <label><input type="submit"></label>
+            </div>
+        </div>
+
     </form>
 </body>
 
