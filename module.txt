@@ -267,10 +267,10 @@ function job(state) {
  
 let promise = job(true); 
 promise.then(function(data) {                
-		console.log(data);     // => success         
+		console.log(data);              
 		return job(false);})        
 	.catch(function(error) {                
-		console.log(error);  // => error            
+		console.log(error);       
 		return 'Error caught'; 
 });
 
