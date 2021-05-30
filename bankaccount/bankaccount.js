@@ -1,46 +1,32 @@
-'use strict';
-window.onload = function () {
-    document.getElementById('create').onclick = createAccount;
-}
+var accountInfo = [];
 
-function NewAccount(name, dep) {
-    var accname = name;
-    var deposit = dep;
+var bankApp = (function () {
+    var name = "";
+    var balance = 0;
+    var y;
 
-    var account = {
-
-        'getAccName': function () {
-            return accname;
-        },
-        'getDeposit': function () {
-            return deposit;
-        },
-        'setAccName': function (name) {
-            accname = name;
-        },
-        'setDeposit': function (dep) {
-            deposit = dep;
+    function showData() {
+        var dataText = "";
+        for (let i = 0; i < accountInfo.length; i++) {
+            dataText += "Account name: " + accountInfo[i].name + " Balance: " + accountInfo[i].balance + "\n";
         }
-    };
-    return account;
-}
+        document.getElementById("output").value = dataText;
 
-var myList = new Array();
-
-function createAccount() {
-    var accName = document.getElementById('accountname').value;
-    var dep = document.getElementById('deposit').value;
-
-    var acc = NewAccount(accName, dep);
-
-    myList.push(acc);
-
-    var output = "";
-    for (var i = 0; i < myList.length; i++) {
-        output += "Account Name : " + myList[i].getAccName() + ", Deposit : " + myList[i].getDeposit() + "\n";
     }
 
-    document.getElementById('output').value = output;
+    return {
+        createAccount: function () {
+            name = document.getElementById("accountname").value;
+            balance = document.getElementById("deposit").value;
 
+            accountInfo.push({ "name": name, "balance": balance });
+            showData();
+            document.getElementById("accountname").value = "";
+            document.getElementById("deposit").value = "";
+        }
 
-}
+    }
+
+})();
+
+document.getElementById("create").onclick = bankApp.createAccount;
