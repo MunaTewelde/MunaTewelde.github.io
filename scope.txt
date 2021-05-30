@@ -30,9 +30,12 @@ Ans:this keywordrefersto the current object in amethodor constructor.
 Ans:“this”Refersto an Invoker Objectand unlike java it is mandatory
 5. What does 'this' refer to when used in a JavaScript constructor function?
  Ans:The keyword this inside the constructor function points to the newly created object. 
+
 6. Assume object x is the prototype for object y in Javascript. Object x has a method f( ) containing keyword 'this'. When f is called by x.f( ), what does 'this' refer to?
 Ans:It refers to the object of x.
+
 7. What is a free variable in JavaScript? Ans:A variable declared inside a function and there are not parameter and a local variable.
+
 8. Create an object that has properties with name = "fred" and major="music" and a property that is a function that takes 2 numbers and returns the smallest of the two, or the square of the two if they are equal.Ans:Var a={name:”fred”,
 Major:”music”,Property:finction(a,b){if(a< b){Return a;}else if(a===b){Return a*b;}Return b;}}9. Write Javascript code for creating three Employee objects using the "new" keyword and a constructor function. Employee objects have the following fields: name, salary, position. 
 Ans:
@@ -44,6 +47,7 @@ Var Employee = function(name, salary, position) {
     var emp1 = new Employee(“bob”,8900,”Manager”);
     var emp2 = new Employee(“smith”,3000,”Accountant”)
     var emp3 = new Employee(“carl”,5000,”Supervisor ”)
+
 10. Write a Javascript function that takes any number of input arguments and returns the product of the arguments. 
 Ans:
 function Mult(){
@@ -53,6 +57,7 @@ function Mult(){
 }
 return products;
 }
+
 11. Write an arrow function that returns the maximum of its three input arguments.
 Ans:
 Function max(a,b,c){
