@@ -26,8 +26,10 @@ Ans:Method is written inside a class but function is not. In JavaScript function
 
 3. What does 'this' refer to when used in a Java method?
 Ans:this keywordrefersto the current object in amethodor constructor.
+
 4. What does 'this' refer to when used in a JavaScript method?
 Ans:“this”Refersto an Invoker Objectand unlike java it is mandatory
+
 5. What does 'this' refer to when used in a JavaScript constructor function?
  Ans:The keyword this inside the constructor function points to the newly created object. 
 
