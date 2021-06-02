@@ -52,7 +52,8 @@ $(function () {
 
 Ans:
 $(function () {
-    $('li.item-a').parent().css({'background-color':'red'});
+    $("ul.level-2").children().css('background-color', 'red');
+
 });
 
 
@@ -80,8 +81,8 @@ these items in the list. Describe the changes to the Javascript (jQuery) code to
 requirement.
 
 Ans:
- Select all elements in  “Turkey” class and apply “replaceWith” method
- $(“. Turkey”).replaceWith(  “<li class=” mashed”> <em>Portobello Mushroom</em> </li>“);
+
+ $(“. turkey”).replaceWith(  “<li class=” mashed”> <em>Mashed Potatoes</em> </li>“);
 
 5. Write Javascript (jQuery) code to change the color of the parent and grandparent list items of the span
 of text ("some text") in the following to green.
@@ -93,6 +94,7 @@ of text ("some text") in the following to green.
 $(document).ready(function(){
 <!—INSERT YOUR JQUERY CODE HERE - - >
  $('.ancestors span').parent().parent().css('color','green');
+ 
  }); 
 });
 </script>
