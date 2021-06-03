@@ -22,8 +22,9 @@ color: red;
 <script>
 <!—INSERT YOUR JQUERY CODE HERE - - >
 $(function () {
-    let text = $("p:first-child").text();
-    $('p:nth-child').text(text);
+    $x = $("p").first().detach();
+        $($x).children().css('color', 'black');
+        $y = $("p").last().after($x);
 });
 </script>
 </body>
