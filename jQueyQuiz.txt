@@ -26,7 +26,7 @@ const val= $('div > h1').css('background-color',red)
 <head>
 <script>
 <!—INSERT YOUR JQUERY CODE HERE - - >
-$("p").append("Yes!")
+ $("p").append($("<p>", { "text": "yes" }));
 </script>
 </head>
 <body>
