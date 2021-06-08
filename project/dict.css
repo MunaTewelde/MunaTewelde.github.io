@@ -1,0 +1,33 @@
+body{
+	margin:0;
+}
+
+.header{
+	background-color: rgb(211, 210, 210);
+    padding: 1px;
+}
+h1{
+	padding-left: 15px;
+}
+.searchArea{
+	background-color:rgb(241, 240, 240);
+    padding: 30px;
+}
+
+#result{
+	min-height: 500px;
+	padding: 10px;
+}
+
+#result ul {
+    list-style: none;
+    padding: 0;
+}
+
+#result li{
+    padding: 10px;
+}
+
+.validator{
+	float:right;
+}
